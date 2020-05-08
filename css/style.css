@@ -1,3 +1,35 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: url(../images/bg-pattern-desktop.svg);
+  margin: 0px;
+}
+/* Container section */
+.container {
+  display: grid;
+  grid-template-columns: 200px 2fr 2fr;
+  grid-template-rows: 1fr 3fr;
+}
+.container__header {
+  align-self: center;
+  grid-column: 2;
+}
+.container__text {
+  grid-column: 2;
+  width: 70%;
+}
+.container__title {
+  display: flex;
+  flex-direction: column;
+}
+/* Side image */
+.side-image {
+  background: no-repeat url(../images/hero-desktop.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
