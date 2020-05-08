@@ -18,16 +18,17 @@
       </header>
       <section class="container__text">
         <h1 class="container__title"><span>We're</span> <span>coming</span> <span>soon</span></h1>
-        <p>
+        <p class="container__paragraph">
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form action="">
-          <label for="email">Email Address</label>
+        <form action="" class="container__form">
+          <!-- Label for accessibility -->
+          <label for="email" class="container__form__label">Email Address</label>
           <input type="text" id="email" name="email" placeholder="Email Address" />
           <input type="submit" value="button icon here" />
-          <p class="tooltip">Please provide a valid email</p>
         </form>
+        <p class="tooltip">Please provide a valid email</p>
       </section>
 
       <div class="side-image"></div>

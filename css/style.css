@@ -2,6 +2,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   background: url(../images/bg-pattern-desktop.svg);
   margin: 0px;
+  font-size: 16px;
 }
 /* Container section */
 .container {
@@ -20,6 +21,23 @@ body {
 .container__title {
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 1.2rem;
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: hsl(0, 6%, 24%);
+}
+.container__title span:first-child {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.container__paragraph {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.5;
+}
+.tooltip {
+  display: none;
 }
 /* Side image */
 .side-image {
