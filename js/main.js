@@ -1,5 +1,6 @@
 const form = document.querySelector('.container__form');
 const tooltip = document.querySelector('.tooltip');
+const tooltiptwo = document.querySelector('.tooltiptwo');
 const errorIcon = document.querySelector('.error-icon');
 const emailInput = document.querySelector('.container__form__email-input');
 
@@ -13,7 +14,12 @@ form.addEventListener('submit', function (event) {
     emailInput.style.border = '2px solid hsl(0, 93%, 68%)';
   } else {
     tooltip.style.display = 'none';
+    tooltiptwo.style.display = 'block';
     errorIcon.style.display = 'none';
     emailInput.style.border = '1px solid hsl(0, 36%, 70%)';
+    setTimeout(function () {
+      tooltiptwo.style.display = 'none';
+    }, 3000);
   }
+  form.reset();
 });

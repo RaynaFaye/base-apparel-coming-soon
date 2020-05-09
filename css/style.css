@@ -94,6 +94,12 @@ body {
   font-size: 14px;
   padding-left: 30px;
 }
+.tooltiptwo {
+  display: none;
+  color: hsl(123, 100%, 26%);
+  font-size: 14px;
+  padding-left: 30px;
+}
 .error-icon {
   display: none;
   grid-row: 1;
@@ -129,7 +135,7 @@ body {
     grid-template-rows: 1fr 3fr;
   }
 }
-@media all and (max-height: 760px) {
+@media all and (max-height: 700px) {
   .side-image {
     height: 100%;
   }
