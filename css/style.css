@@ -108,13 +108,16 @@ body {
   width: 100%;
   height: 100vh;
   grid-column: 3;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
 }
 /* Attribution section */
+.container__footer {
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 3;
+}
 .attribution {
   font-size: 11px;
-  text-align: center;
-  margin-top: 100px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -124,6 +127,11 @@ body {
   .container {
     grid-template-columns: 1fr 1fr 4fr;
     grid-template-rows: 1fr 3fr;
+  }
+}
+@media all and (max-height: 760px) {
+  .side-image {
+    height: 100%;
   }
 }
 @media all and (max-width: 768px) {
@@ -159,6 +167,12 @@ body {
     height: 250px;
     grid-column: 1;
     grid-row: 2;
+  }
+  /* Attribution section */
+  .container__footer {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
   }
 }
 @media all and (max-width: 440px) {
