@@ -20,6 +20,6 @@ form.addEventListener('submit', function (event) {
     setTimeout(function () {
       tooltiptwo.style.display = 'none';
     }, 3000);
+    form.reset();
   }
-  form.reset();
 });
